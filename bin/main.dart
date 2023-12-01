@@ -7,8 +7,9 @@ import 'package:testing_console_apps/my_app.dart';
 import 'package:testing_console_apps/services/extension_service.dart';
 import 'package:testing_console_apps/services/io_service.dart';
 import 'package:testing_console_apps/services/language_service.dart';
+import 'package:translator/translator.dart';
 
-void main(){
+Future<void> main() async {
 
   // while(true){
   //
@@ -27,9 +28,16 @@ void main(){
 
 
 
+  var translator = GoogleTranslator();
+
   String str = IOService.read();
-  IOService.write(str);
-  String str2 = IOService.read();
+
+  Translation result = await str.translate(to: "uz", from: "");
+
+  IOService.write(result);
+
+
+
 
 
 
