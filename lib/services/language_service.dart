@@ -7,7 +7,11 @@ class LanguageService{
 
   static Language get getLanguage => _language;
 
-  static set switchLanguage(String lang){
+  static set setLanguage(Language language){
+    _language = language;
+  }
+
+  static void switchLanguage(String lang){
     switch(lang){
       case "I":{_language = Language.uz;} break;
       case "II":{_language = Language.ru;} break;
