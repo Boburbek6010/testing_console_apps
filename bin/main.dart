@@ -1,10 +1,7 @@
-import 'dart:io';
-import 'package:http/http.dart';
 import 'package:testing_console_apps/menus/home_menu.dart';
 import 'package:testing_console_apps/menus/setting_menu.dart';
 import 'package:testing_console_apps/models/lang_model.dart';
 import 'package:testing_console_apps/my_app.dart';
-import 'package:testing_console_apps/services/extension_service.dart';
 import 'package:testing_console_apps/services/io_service.dart';
 import 'package:testing_console_apps/services/language_service.dart';
 import 'package:translator/translator.dart';
